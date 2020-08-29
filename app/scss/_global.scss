@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul,li{
+  list-style: none;
+}
+
+body{
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+button{
+  outline: none;
+}
+input{
+  outline: none;
+}
+.container{
+  max-width: 1410px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title{
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #241b1b;
+}
+.link-all{
+  font-size: 18px;
+  font-weight: 300;
+  color: #30b5d8;
+  border-bottom: 1px dashed #30b5d8;
+}
