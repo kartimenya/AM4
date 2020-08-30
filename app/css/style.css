@@ -51,6 +51,19 @@ input {
   border-bottom: 1px dashed #30b5d8;
 }
 
+.btn-more {
+  background: none;
+  border: 3px solid #ace1ef;
+  width: 355px;
+  height: 66px;
+  border-radius: 30px;
+  color: #a9a9a9;
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'UniSansThinCAPS';
   src: url("../fonts/UniSansThinCAPS.eot");
@@ -218,7 +231,7 @@ input {
 }
 
 .news {
-  padding-top: 40px;
+  padding: 40px 0 78px;
 }
 
 .news__top {
@@ -232,6 +245,7 @@ input {
 .news__top-left {
   display: flex;
   align-items: center;
+  margin-left: 37px;
 }
 
 .news__title {
@@ -240,6 +254,10 @@ input {
 
 .news__sorting-label {
   margin-top: 50px;
+}
+
+.news__btn-more {
+  margin: 65px auto 0;
 }
 
 .news__sorting-text {
@@ -446,4 +464,187 @@ input {
 
 .heavy-casp {
   font-family: 'UniSansThinHeavyCAPS';
+}
+
+.games {
+  background: #2e8a7d;
+  border-left: 70px solid #287e72;
+  padding: 35px 0 100px;
+  position: relative;
+}
+
+.games::before {
+  content: '';
+  border: 30px solid transparent;
+  border-left: 70px solid #fff;
+  position: absolute;
+  left: -70px;
+  top: -31px;
+}
+
+.games::after {
+  content: '';
+  border: 30px solid transparent;
+  border-left: 70px solid #287e72;
+  position: absolute;
+  left: -70px;
+  bottom: -29px;
+}
+
+.games__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 49px;
+  padding-left: 30px;
+}
+
+.games__title {
+  color: #fff;
+  margin-right: 40px;
+}
+
+.games__link-all {
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+}
+
+.games .slick-list {
+  padding-top: 10px;
+}
+
+.games .slick-slide > div {
+  display: flex;
+}
+
+.games .slick-arrow {
+  background: #323232;
+  width: 60px;
+  height: 60px;
+  border: none;
+  position: absolute;
+  top: -100px;
+  cursor: pointer;
+}
+
+.games .slick-next {
+  right: 0;
+}
+
+.games .slick-prev {
+  right: 62px;
+}
+
+.games .slick-disabled {
+  background: #247368;
+}
+
+.games__slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -87px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.games__slider-dots button {
+  margin: 0 7.5px;
+  border: none;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #176459;
+  cursor: pointer;
+}
+
+.games__slider-dots .slick-active button {
+  background: #323232;
+}
+
+.games-slider__item {
+  color: #000;
+}
+
+.games-slider__item-inner {
+  display: flex;
+  height: 320px;
+}
+
+.games-slider__item-box {
+  background: #fff;
+  padding: 20px 21px;
+  position: relative;
+}
+
+.games-slider__item-appraisal {
+  background: #f7d54a;
+  width: 80px;
+  height: 80px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
+
+.games-slider__item-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: #010101;
+  margin-bottom: 9px;
+  width: 298px;
+}
+
+.games-slider__item-platforms span {
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.games-slider__item-platforms span:nth-child(2) {
+  color: #000;
+}
+
+.games-slider__item-platforms span:nth-child(2) {
+  color: #050099;
+}
+
+.games-slider__item-platforms span:nth-child(3) {
+  color: #2a9657;
+}
+
+.games-slider__item-platforms span:nth-child(4) {
+  color: #050099;
+}
+
+.games-slider__item-description {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  line-height: 23px;
+  margin-top: 30px;
+}
+
+.games-slider__item-bottom {
+  margin-top: 30px;
+  position: absolute;
+  bottom: 21px;
+  left: 20px;
+}
+
+.games-slider__item-stat {
+  margin-right: 24px;
+}
+
+.games-slider__item-stat span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #939393;
+  margin-right: 3px;
 }
