@@ -22,6 +22,20 @@ $( document ).ready(function() {
     dots: true,
     prevArrow:'<button type="button" class="slick-prev"><img src="imagines/prev.png" alt=""></button>',
     nextArrow:'<button type="button" class="slick-next"><img src="imagines/next.png" alt=""></button>',
-    dotsClass: 'games__slider-dots'
+    dotsClass: 'games__slider-dots dots-style'
+  })
+
+  $('.trailers-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    rows: 3,
+    infinite: false,
+    swipe: false,
+    dots: true,
+    prevArrow:'<button type="button" class="slick-prev"><img src="imagines/prev.png" alt=""></button>',
+    nextArrow:'<button type="button" class="slick-next"><img src="imagines/next.png" alt=""></button>',
+    dotsClass: 'trailers__slider-dots dots-style',
+    variableWidth:true,
+
   })
 });

@@ -52,4 +52,38 @@ input{
   font-weight: 300;
   display: block;
   cursor: pointer;
+  transition: .3s;
+  &:hover{
+    border: 3px solid #30b5d8;
+    color: #272727;
+  }
+}
+.slick-arrow{
+  background: #323232;
+  width: 60px;
+  height: 60px;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+.dots-style{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  button{
+    margin: 0 7.5px;
+    border: none;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #176459;
+    cursor: pointer;
+  }
+  & .slick-active{
+    button{
+      background: #323232;
+    }
+  }
 }
