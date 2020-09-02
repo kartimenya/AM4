@@ -101,6 +101,18 @@ input {
   background: #323232;
 }
 
+.add-btn {
+  border: none;
+  background: #2d95bf;
+  border-radius: 30px;
+  width: 210px;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'UniSansThinCAPS';
   src: url("../fonts/UniSansThinCAPS.eot");
@@ -798,6 +810,33 @@ input {
   background: #f7d54a;
 }
 
+.articles {
+  padding: 60px 0 75px;
+}
+
+.articles__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+.articles__top-left {
+  display: flex;
+  align-items: center;
+}
+
+.articles__link-all {
+  margin-left: 55px;
+  color: #bf2d2d;
+  border-bottom: 1px dashed #bf2d2d;
+}
+
+.articles__btn-more {
+  margin: 65px auto 0;
+}
+
 .articles__content-inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -807,18 +846,24 @@ input {
 
 .articles__content-item {
   border: 2px solid #f2f2ef;
+  position: relative;
 }
 
-.article-item-1 {
-  grid-column: 1/2;
-}
-
-.article-item-2 {
+.article-item__img {
   grid-column: 2/4;
 }
 
+.article-item__img .article-item__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .article-item__inner {
-  padding: 25px;
+  padding: 15px 15px 15px 25px;
+}
+
+.article-item__box {
+  padding-right: 15px;
 }
 
 .article-item__title {
@@ -827,6 +872,7 @@ input {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-top: 95px;
 }
 
 .article-item__paragraph-i {
@@ -838,4 +884,49 @@ input {
   font-size: 17px;
   color: #2d2d2d;
   margin-top: 35px;
+}
+
+.article-item__top {
+  display: flex;
+  position: absolute;
+  left: -10px;
+  top: 15px;
+}
+
+.article-item__top-left {
+  display: flex;
+  margin-right: 15px;
+}
+
+.article-item__data {
+  width: 70px;
+  height: 70px;
+  padding: 10px 0;
+  background: #f2ca5b;
+  font-size: 35px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.article-item__data span {
+  font-size: 15px;
+  display: block;
+}
+
+.article-item__top-right {
+  background: #f2f2ef;
+  width: 280px;
+  height: 70px;
+  padding: 7px 12px;
+}
+
+.article-item__top-name {
+  font-size: 20px;
+  color: #2d95bf;
+  margin-bottom: 10px;
+}
+
+.article-item__top-stat {
+  color: #8c8c8b;
+  margin-right: 18px;
 }
