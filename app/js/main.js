@@ -1,18 +1,30 @@
 $( document ).ready(function() {
-  // $('.main__slider').slick({
-  //   fade: true,
-  //   arrows: false,
-  //   asNavFor: '.slider__dots',
-  //   infinite: true,
-  // })
-  // $('.slider__dots').slick({
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   asNavFor: '.main__slider',
-  //   focusOnSelect: true
-  // })
+  $('.main__slider').slick({
+    fade: true,
+    arrows: false,
+    asNavFor: '.slider__dots',
+    infinite: true,
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 630,
+        settings: {
+          swipe: true,
+          fade: false
+        }
+      }
+    ]
+  })
+  $('.slider__dots').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrows: false,
+    asNavFor: '.main__slider',
+    focusOnSelect: true,
+    variableWidth: true,
+    swipe: false
+  })
   $('.games-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
