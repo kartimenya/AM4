@@ -16,7 +16,9 @@
         <div class="header__left">
           <a class="header__logo" href=""><img src="imagines/logo.png" alt=""></a>
           <nav class="header__menu menu">
+            <button class="menu__btn" type="button" name="button"></button>
             <div class="menu__body">
+              <button class="menu__body-close" type="button" name="button"></button>
               <ul class="menu__list">
                 <li class="menu__item"><a href="" class="menu__link">Новости</a></li>
                 <li class="menu__item"><a href="" class="menu__link">Статьи</a></li>
@@ -37,6 +39,20 @@
 
 
         <div class="header__initialization">
+          <a class="header__initialization-icon" href="#">
+            <svg height="40" viewBox="0 0 512 512" >
+              <linearGradient id="a" gradientTransform="matrix(1 0 0 -1 0 -13734)" gradientUnits="userSpaceOnUse" x1="0" x2="512" y1="-13990" y2="-13990">
+                <stop offset="0" stop-color="#fec230"/>
+                <stop offset="1" stop-color="#fec230"/>
+              </linearGradient>
+              <path d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0" fill="url(#a)"/>
+              <g fill="#fff"><path d="m386.804688 83.5h-261.609376c-22.992187 0-41.695312 18.703125-41.695312 41.695312v55.042969h30v-55.042969c0-6.449218 5.246094-11.695312 11.695312-11.695312h261.609376c6.449218 0 11.695312 5.246094 11.695312 11.695312v261.609376c0 6.449218-5.246094 11.695312-11.695312 11.695312h-261.609376c-6.449218 0-11.695312-5.246094-11.695312-11.695312v-55.042969h-30v55.042969c0 22.992187 18.703125 41.695312 41.695312 41.695312h261.609376c22.992187 0 41.695312-18.703125 41.695312-41.695312v-261.609376c0-22.992187-18.703125-41.695312-41.695312-41.695312zm0 0"/>
+              <path d="m224.109375 320.066406 21.210937 21.214844 85.28125-85.28125-85.28125-85.28125-21.210937 21.214844 49.066406 49.066406h-189.675781v30h189.675781zm0 0"/>
+              </g>
+            </svg>
+          </a>
+
+
           <a class="header__initialization-sign" href="#">ВХОД</a>
           <a class="header__initialization-registration" href="#">РЕГИСТРАЦИЯ</a>
         </div>
@@ -213,7 +229,7 @@
     </div>
   </section>
 
-  <section style="display:none" class="games">
+  <section class="games">
     <div class="container">
       <div class="games__top">
         <h3 class="games__title title">ИГРЫ</h3>
@@ -508,14 +524,13 @@
               </div>
             </div>
 
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section style="display:none" class="trailers">
+  <section class="trailers">
     <div class="container">
       <div class="trailers__top">
         <h3 class="trailers__title title">ТРЕЙЛЕРЫ</h3>
@@ -529,10 +544,10 @@
             <div class="trailers-slider__item">
               <a href="#">
                 <div class="trailers-slider__item-inner">
-                  <img src="imagines/trailer-img-1.jpg" alt="">
                   <div class="trailers-slider__item-paly">
                     <img src="imagines/play.png" alt="">
                   </div>
+                  <img src="imagines/trailer-img-1.jpg" alt="">
                   <div class="trailers-slider__item-box">
                     <h4 class="trailers-slider__item-title">Not A Hero. Геймплейный трейлер</h4>
                     <p class="trailers-slider__item-description">Жанр: Action, Pixel</p>
@@ -712,7 +727,7 @@
     </div>
   </section>
 
-  <section style="display:none" class="articles">
+  <section class="articles">
     <div class="container">
       <div class="articles__top">
         <div class="articles__top-left">
@@ -782,7 +797,7 @@
                   <p class="article-item__paragraph-i">Если подумать, то по-настоящему отвратительных игр существует не так уж и много. </p>
                   <p class="article-item__paragraph">Но Raven’s Cry принадлежит к числу исключений. В ней нет практически ничего, чем разработчики могли бы гордиться.</p>
                 </div>
-                <img src="imagines/article-img.jpg" alt="">
+                <img class="article-item-photo" src="imagines/article-img.jpg" alt="">
               </div>
             </div>
 
@@ -909,6 +924,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/sliders.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
