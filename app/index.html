@@ -137,7 +137,7 @@
 
   </section>
 
-  <section style="display:none" class="news">
+  <section class="news">
     <div class="container">
 
       <div class="news__top">
@@ -151,12 +151,12 @@
           <button class="news__sorting-btn _active" type="button" name="button">Популярные</button>
           <button class="news__sorting-btn" type="button" name="button">Новые</button>
 
-          <div class="news__sorting-label sorting-label">
+          <div id="sorting-label" class="news__sorting-label sorting-label">
             <span class="sorting-label__on-element">Все</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#30b5d8" width="22" height="16" viewBox="0 0 22 16">
               <path d="M1460.01,803l-11-16h22Z" transform="translate(-1449 -787)"/>
             </svg>
-            <div style="display:none" class="sorting-label__popup">
+            <div class="sorting-label__popup">
               <ul class="sorting-label__list">
                 <li class="sorting-label__item">Игротека</li>
                 <li class="sorting-label__item">Технологии</li>
@@ -172,8 +172,7 @@
       <div class="news__content">
         <div class="news__content-inner">
 
-          <div class="news__item news__item-1">
-            <img class="news__item-img" src="imagines/new-img-1.jpg" alt="">
+          <div class="news__item news__item-1" style="background-image: url(../imagines/new-img-1.jpg)">
             <div class="news__item-inner">
               <h4 class="news__item-title new-title">Как инди-студия утерла нос Telltale</h4>
             </div>
@@ -201,8 +200,7 @@
             </div>
           </div>
 
-          <div class="news__item news__item-5">
-            <img class="news__item-img" src="imagines/new-img-5.jpg" alt="">
+          <div class="news__item news__item-5" style="background-image: url(../imagines/new-img-5.jpg)">
             <div class="news__item-inner new-title heavy-casp">
               <h4 class="news__item-title">Карточный домик продлили до 4-го сезона!</h4>
             </div>
@@ -216,8 +214,7 @@
             </div>
           </div>
 
-          <div class="news__item news__item-7">
-            <img class="news__item-img" src="imagines/new-img-7.jpg" alt="">
+          <div class="news__item news__item-7" style="background-image: url(../imagines/new-img-7.jpg)">
             <div class="news__item-inner">
               <h4 class="news__item-title new-title">Это то, зачем нужны игры: мы спасли <span class="heavy-casp">350</span> сирийских детей</h4>
             </div>
@@ -895,7 +892,7 @@
     </div>
   </section>
 
-  <footer style="display:none" class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__left">

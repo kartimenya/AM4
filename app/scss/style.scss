@@ -92,6 +92,9 @@
     font-weight: 300;
     color: #32272b;
   }
+  &__body-close{
+    display: none;
+  }
 }
 .main{
   position: relative;
@@ -253,15 +256,23 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  transition: .2s;
   &__on-element{
     color: #30b5d8;
     font-size: 25px;
   }
   &__popup{
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     z-index: 10;
     left: 0;
     top: 55px;
+    transition: .3s;
+    &._open{
+      opacity: 1;
+      visibility:visible;
+    }
   }
   &__list{
     background: #fff;
@@ -279,13 +290,22 @@
       color: #30b5d8;
     }
   }
+  svg{
+    transition: .3s;
+  }
+  &._open{
+    background: #33282c;
+    svg{
+      transform: rotate(-180deg);
+    }
+  }
 }
 .news__content{
   &-inner{
+    justify-content:center;
     display: grid;
-    grid-template-columns: 28.985% 28.985% 21.014% 21.014%;
-    // grid-template-columns: 400px 400px 290px 290px;
-    grid-auto-rows: 320px 330px 320px;
+    grid-template-columns: 400px 400px 290px 290px;
+    grid-auto-rows: 320px 320px 320px 320px 320px 320px;
   }
 }
 
@@ -330,6 +350,7 @@
 }
 
 .news__item-1{
+  background:  no-repeat center top / cover ;
   grid-column: 1/3;
   .news__item-title{
     font-family: 'UniSansThinHeavyCAPS';
@@ -346,9 +367,11 @@
   }
 }
 .news__item-2{
+  background:  no-repeat center top / cover;
   grid-column: 3/4;
 }
 .news__item-3{
+  background:  no-repeat center top / cover;
   grid-column: 4/4;
 }
 .news__item-4{
@@ -373,6 +396,7 @@
   }
 }
 .news__item-5{
+  background:  no-repeat center top / cover ;
   grid-column: 2/2;
   grid-row: 2/4;
 }
@@ -381,7 +405,7 @@
   grid-row: 2/2;
   align-items: flex-start;
   img{
-    position: static;
+    position: relative;
   }
   .news__item-title{
     color: #000;
@@ -398,6 +422,7 @@
   }
 }
 .news__item-7{
+  background:  no-repeat center top / cover;
   grid-column: 3/5;
   grid-row: 3/4;
 }
@@ -406,9 +431,7 @@
   font-family: 'UniSansThinHeavyCAPS';
 }
 
-
-
-
+//games
 .games{
 	background: #2e8a7d;
 	box-shadow: 70px 0px 0px 0px #287e72 inset;
