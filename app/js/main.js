@@ -18,7 +18,7 @@ sortingLabel.addEventListener('click', () =>{
 });
 
 document.body.addEventListener('click', (e) =>{
-  path = e.path;
+  let path = e.path;
   if (!path.includes(sortingLabel)) {
     popup.classList.remove ("_open");
     sortingLabel.classList.remove ("_open");
